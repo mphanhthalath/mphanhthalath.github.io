@@ -268,10 +268,14 @@ section{
     background: linear-gradient(to right, rgb(0,157,255), rgb(255,0,255));
 }
 
-.project-grid{
+/* Center align the grid content */
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    padding: 0 1rem; /* Adds small padding to prevent overflow on small screens */
+    max-width: 100%; /* Ensures grid doesn’t exceed screen width */
+    box-sizing: border-box;
 }
 
 .project-card{
