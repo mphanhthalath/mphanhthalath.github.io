@@ -276,10 +276,12 @@ section{
     padding: 0 1rem; /* Adds small padding to prevent overflow on small screens */
     max-width: 100%; /* Ensures grid doesn’t exceed screen width */
     box-sizing: border-box;
+    overflow-x: hidden; /* Prevents any overflow from grid content */
 }
 
 .project-card{
     padding: 3rem 2rem;
+    width: 100%; /* Ensures each card stays within grid boundaries */
     display: flex;
     flex-direction: column;
     align-items: center;
