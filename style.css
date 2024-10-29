@@ -10,6 +10,18 @@
 
 
 }
+/* Global Styles for Layout */
+html, body {
+    overflow-x: hidden;
+    width: 100vw; /* Fixes width to viewport */
+}
+
+* {
+    max-width: 100%;
+    box-sizing: border-box; /* Consistent padding and border behavior */
+}
+
+/* Rest of your CSS below */
 
 header{
     position: fixed;
