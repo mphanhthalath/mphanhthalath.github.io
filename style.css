@@ -397,6 +397,7 @@ footer ul li a{
         flex-direction: column;
     }
     .input-box input{
+        width: 100%;
         padding: 1rem 2rem;
         font-size: 1.8rem;
     }
