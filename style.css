@@ -154,6 +154,19 @@ section{
     display: flex;
     gap: 1rem;
 }
+
+.btn-group2{
+    display: flex;
+    gap: 1rem;
+    position: absolute; /* Keep button group fixed at the bottom of the viewport */
+    bottom: 1.5rem; /* Adjust this to set the distance from the bottom */
+    margin-top: 1rem; /* Adds spacing from any above text */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset to center */
+    justify-content: center; /* Centers buttons within the group */
+    z-index: 1; /* Ensures it stays on top */
+}
+
 .btn{
     border-radius:3rem;
     padding: 0.5rem 1.5rem;
@@ -162,6 +175,13 @@ section{
     font-weight: 500;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
+    text-align: center; /* Centers text within each button */
+    display: inline-block; /* Keeps height consistent */
+    white-space: nowrap; /* Prevents text from wrapping */
+    height: 2.5rem; /* Set a fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:hover{
@@ -276,8 +296,9 @@ section{
 }
 
 .project-card{
-    padding: 2rem 1.5rem;
+    position: relative;
     width: 100%; /* Ensures each card stays within grid boundaries */
+    padding: 2rem 1.5rem 6rem; /* Add extra padding at the bottom */
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -304,6 +325,7 @@ section{
 .project-card:hover .btn{
     border: 2px solid white;
     color: white;
+    
 }
 
 .project-card:hover .btn:hover{
@@ -316,6 +338,7 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
+
 
 .input-box{
     display: flex;
