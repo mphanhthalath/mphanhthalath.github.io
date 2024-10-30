@@ -301,8 +301,8 @@ section{
     padding: 2rem 1.5rem 6rem; /* Add extra padding at the bottom */
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 1.5rem;
     border: 2px solid black;
@@ -320,6 +320,7 @@ section{
 .project-card img{
     width: 20vw;
     border-radius: 1rem;
+    
 }
 
 .project-card:hover .btn{
