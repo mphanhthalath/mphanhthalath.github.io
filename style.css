@@ -158,7 +158,7 @@ section{
 .btn-group2{
     display: flex;
     gap: 1rem;
-    position: absolute; /* Keep button group fixed at the bottom of the viewport */
+    position: absolute; /* Position the button group at the bottom of each project card (not the viewport) */
     bottom: 1.5rem; /* Adjust this to set the distance from the bottom */
     margin-top: 1rem; /* Adds spacing from any above text */
     left: 50%; /* Center horizontally */
